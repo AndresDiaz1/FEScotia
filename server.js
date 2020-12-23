@@ -4,6 +4,7 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const { ppid } = require('process');
+const port = process.env.PORT || 5000;
 
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({'extended':'true'}));
@@ -20,6 +21,6 @@ app.use((req, res, next)=> {
 
 app.use(express.static('build'));
 app.set('port', processenv.PORT || 5000);
-app.listen(app.get('port'),()=> {
-    console.log(`Express server listening on port ${app.get('port')}`);
+app.listen(port,()=> {
+    console.log(`Express server listening on port ${port}`);
 });
