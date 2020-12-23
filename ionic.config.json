@@ -1,0 +1,7 @@
+{
+  "name": "FEScotia",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
