@@ -1,7 +1,7 @@
 export interface User {
     userId: number;
     name: string;
-    CC: number;
+    CC: string;
   }
 
 export const initialState = {

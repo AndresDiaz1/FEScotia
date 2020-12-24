@@ -4,17 +4,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash, faMoneyCheck } from '@fortawesome/free-solid-svg-icons';
 import './Login.scss';
 import InputFloatingLabel from '../components/inputCustom/InputCustom';
+import { useDispatch } from 'react-redux';
+import { signIn } from '../LoginStore';
 
 const LoginPage: React.FC = () => {
   const [userName, setUserName] = useState<string>('');
   const [userPass, setUserPassword] = useState<string>('');
   const [isPasswordVisible, setPasswordVisibility] = useState<boolean>(false);
+  const dispatch = useDispatch();
 
   const changeInputType = () => {
     setPasswordVisibility(!isPasswordVisible);
   };
 
   const login = () => {
+    dispatch(signIn({ name: userName, CC:userPass }));
     console.log('el usuario', userName);
     console.log('el pass', userPass);
   };

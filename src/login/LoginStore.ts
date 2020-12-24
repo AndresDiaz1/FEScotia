@@ -1,10 +1,19 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
+import LoginAPI from "../api/LoginApi";
 import State from "../StoreType";
 import { initialState, User } from './LoginTypes';
 const STORE_NAME = '@@Login';
 
-export const signIn = createAsyncThunk(`${STORE_NAME}/signIn`, async ({ userId, name, CC }: User) => {
-  });
+interface ClientCredentials {
+    name: string;
+    CC: string;
+}
+
+export const signIn = createAsyncThunk(`${STORE_NAME}/signIn`, async ({ name, CC }: ClientCredentials) => {
+    const clients = await LoginAPI.getClients();
+    console.log('los clienets', clients)
+    return clients
+});
 
   export const loginSlice = createSlice({
     name: STORE_NAME,
