@@ -3,7 +3,7 @@ import { IonButton, IonContent, IonPage } from '@ionic/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash, faMoneyCheck } from '@fortawesome/free-solid-svg-icons';
 import './Login.scss';
-import InputFloatingLabel from './components/inputCustom/InputCustom';
+import InputFloatingLabel from '../components/inputCustom/InputCustom';
 
 const LoginPage: React.FC = () => {
   const [userName, setUserName] = useState<string>('');
