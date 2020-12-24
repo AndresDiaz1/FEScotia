@@ -1,26 +1,35 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { IonButton, IonContent, IonPage } from '@ionic/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash, faMoneyCheck } from '@fortawesome/free-solid-svg-icons';
 import './Login.scss';
 import InputFloatingLabel from '../components/inputCustom/InputCustom';
-import { useDispatch } from 'react-redux';
-import { signIn } from '../LoginStore';
+import { useDispatch, useSelector } from 'react-redux';
+import { loginSelector, signIn } from '../LoginStore';
+import { PATHS } from '../../AppConstants';
+import { useHistory } from 'react-router';
 
 const LoginPage: React.FC = () => {
   const [userName, setUserName] = useState<string>('');
   const [userPass, setUserPassword] = useState<string>('');
   const [isPasswordVisible, setPasswordVisibility] = useState<boolean>(false);
+  const { user } = useSelector(loginSelector);
   const dispatch = useDispatch();
+  const history = useHistory();
+
+  useEffect(() => {
+    if (user.id) {
+      history.push(PATHS.ACCOUNTS);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user.id]);
 
   const changeInputType = () => {
     setPasswordVisibility(!isPasswordVisible);
   };
 
   const login = () => {
-    dispatch(signIn({ name: userName, CC:userPass }));
-    console.log('el usuario', userName);
-    console.log('el pass', userPass);
+    dispatch(signIn({ name: userName, CC: userPass }));
   };
 
   return (

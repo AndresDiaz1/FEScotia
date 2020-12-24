@@ -1,6 +1,5 @@
-import { LoginState } from "./login/LoginTypes";
+import { LoginState } from './login/LoginTypes';
 
 export default interface State {
-    login: LoginState;
-
+  login: LoginState;
 }

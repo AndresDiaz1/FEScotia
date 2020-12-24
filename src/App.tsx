@@ -23,11 +23,13 @@ import '@ionic/react/css/display.css';
 import './theme/variables.scss';
 import { PATHS } from './AppConstants';
 import LoginPage from './login/pages/Login';
+import AccountsPage from './accounts/pages/Accounts';
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <Route path={PATHS.LOGIN} component={LoginPage} exact={true} />
+      <Route path={PATHS.ACCOUNTS} component={AccountsPage} exact={true} />
       <Route exact path="/" render={() => <Redirect to={PATHS.LOGIN} />} />
     </IonReactRouter>
   </IonApp>
