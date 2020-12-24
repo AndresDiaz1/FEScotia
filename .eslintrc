@@ -1,0 +1,39 @@
+{
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "plugins": ["react", "prettier", "@typescript-eslint", "react-hooks"],
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "env": {
+      "es6": true,
+      "node": true,
+      "browser": true
+    },
+    "rules": {
+      "@typescript-eslint/no-explicit-any": "error",
+      "no-unused-vars": "error",
+      "prefer-arrow-callback": "error",
+      "prefer-const": "error",
+      "no-console": "warn",
+      "prefer-destructuring": "warn",
+      "react-hooks/rules-of-hooks": "error",
+      "quotes": [
+        2,
+        "single",
+        {
+          "avoidEscape": true
+        }
+      ],
+      "react/prop-types": [0],
+      "eqeqeq": ["error", "smart"]
+    }
+  }
+  

@@ -74,6 +74,13 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  --ion-color-scotia-red: #ED0622;
+  --ion-color-scotia-red-rgb: 237,6,34;
+  --ion-color-scotia-red-contrast: #ffffff;
+  --ion-color-scotia-red-contrast-rgb: 255,255,255;
+  --ion-color-scotia-red-shade: #d1051e;
+  --ion-color-scotia-red-tint: #ef1f38;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -229,4 +236,13 @@ http://ionicframework.com/docs/theming/ */
 
     --ion-card-background: #1e1e1e;
   }
+}
+
+.ion-color-scotia-red {
+  --ion-color-base: var(--ion-color-scotia-red);
+  --ion-color-base-rgb: var(--ion-color-scotia-red-rgb);
+  --ion-color-contrast: var(--ion-color-scotia-red-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-scotia-red-contrast-rgb);
+  --ion-color-shade: var(--ion-color-scotia-red-shade);
+  --ion-color-tint: var(--ion-color-scotia-red-tint);
 }

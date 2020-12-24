@@ -1,0 +1,39 @@
+.login-page {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 50%;
+        margin: auto;
+    }
+    &__image-container {
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+    &__form {
+        flex-grow: 2;
+        display: flex;
+        flex-direction: column;
+    }
+    &__input {
+        --highlight-background: var(--ion-color-scotia-red);
+        --highlight-color-focused: 
+    }
+    &__reveal-password-container {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 50px;
+      }
+    &__reveal-password-icon {
+        position: absolute;
+        right: 10px;
+        top: 35%;
+      }
+    ion-item.item-has-focus > ion-label{
+        color: var(--ion-color-scotia-red) !important;
+      }
+}
