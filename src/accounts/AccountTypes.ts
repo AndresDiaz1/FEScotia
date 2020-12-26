@@ -3,7 +3,7 @@ export interface Account {
   id: string;
   accountType: string;
   status: number;
-  AvailableValue: number;
+  availableValue: number;
 }
 
 export interface AccountState {

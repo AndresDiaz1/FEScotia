@@ -1,18 +1,25 @@
 import React from 'react';
-import { IonContent, IonLabel, IonLoading, IonPage } from '@ionic/react';
+import { IonCol, IonContent, IonGrid, IonLabel, IonLoading, IonPage, IonRow } from '@ionic/react';
 import { useSelector } from 'react-redux';
 import { accountsSelector } from '../AccountsStore';
 import SimpleHeader from '../../sharedComponents/SimpleHeader/SimpleHeader';
+import AccountCard from '../components/AccountCard';
 
 const AccountsPage: React.FC = () => {
   const { accounts, isLoading, errorMessage } = useSelector(accountsSelector);
 
   const renderAccountsList = () => {
-    return accounts.map((account) => (
-      <div key={parseInt(account.id)}>
-        <IonLabel>{account.AvailableValue}</IonLabel>
-      </div>
-    ));
+    return (
+      <IonGrid>
+        <IonRow className="accounts-grid">
+          {accounts.map((account) => (
+            <IonCol key={parseInt(account.id)} sizeXs="12" sizeMd="4">
+              <AccountCard {...account} />
+            </IonCol>
+          ))}
+        </IonRow>
+      </IonGrid>
+    );
   };
 
   const renderNoAccounts = () => {
