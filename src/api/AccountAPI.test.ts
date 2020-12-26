@@ -1,4 +1,5 @@
 import { BASE_URL } from '../AppConstants';
+import { orderAccounts } from '../utils/Utils';
 import AccountAPI from './AccountAPI';
 
 const accounts = [
@@ -32,7 +33,7 @@ describe('AccountApi access helper class', () => {
       const spyFetch = jest.spyOn(global, 'fetch').mockReturnValue(Promise.resolve(expectedResponse));
       const response = await AccountAPI.getAccounts(1);
       expect(spyFetch).toHaveBeenCalledWith(BASE_URL + '/account?clientId=^1$');
-      expect(response).toStrictEqual(accounts);
+      expect(response).toStrictEqual(orderAccounts(accounts));
     });
   });
 });

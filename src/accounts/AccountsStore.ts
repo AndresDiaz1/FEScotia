@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import AccountAPI from '../api/AccountAPI';
 import State from '../StoreType';
-import { AccountState, initialState } from './AccountTypes';
+import { AccountState, initialState, Account } from './AccountTypes';
 
 const STORE_NAME = '@@Accounts';
 

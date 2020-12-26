@@ -1,6 +1,7 @@
 import { pipe } from 'fp-ts/lib/function';
 import { BASE_URL } from '../AppConstants';
 import { User } from '../login/LoginTypes';
+import { Account } from '../accounts/AccountTypes';
 
 export default class API {
   private static processJSON = async (jsonResponse: Promise<Response>): Promise<User[]> => {
