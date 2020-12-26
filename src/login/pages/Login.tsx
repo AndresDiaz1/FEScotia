@@ -8,6 +8,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { loginSelector, signIn } from '../LoginStore';
 import { PATHS } from '../../AppConstants';
 import { useHistory } from 'react-router';
+import { saveUserOnDB } from '../../data/LoginData';
+import { fetchAccounts } from '../../accounts/AccountsStore';
 
 const LoginPage: React.FC = () => {
   const [userName, setUserName] = useState<string>('');
@@ -19,6 +21,8 @@ const LoginPage: React.FC = () => {
 
   useEffect(() => {
     if (user.id) {
+      saveUserOnDB(user);
+      dispatch(fetchAccounts(user.id));
       history.push(PATHS.ACCOUNTS);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps

@@ -20,7 +20,11 @@ export const signIn = createAsyncThunk(
 export const loginSlice = createSlice({
   name: STORE_NAME,
   initialState,
-  reducers: {},
+  reducers: {
+    setLocallySavedUser(state, action: PayloadAction<User>) {
+      state.user = action.payload;
+    },
+  },
   extraReducers: {
     [signIn.fulfilled.type]: (state, action: PayloadAction<User>) => {
       state.user = action.payload;
@@ -39,5 +43,6 @@ export const loginSlice = createSlice({
   },
 });
 
+export const { setLocallySavedUser } = loginSlice.actions;
 export const loginSelector = (state: State): typeof initialState => state.login;
 export const loginReducer = loginSlice.reducer;

@@ -4,9 +4,11 @@ import { mount } from 'enzyme';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import configureStore from 'redux-mock-store';
+import { act } from 'react-dom/test-utils';
+
 describe('App component', () => {
   describe('Initial state', () => {
-    it('Should render', () => {
+    it('Should render', async () => {
       const state = {
         login: {
           isLogged: false,
@@ -22,7 +24,9 @@ describe('App component', () => {
           <App />
         </Provider>
       );
-      expect(component).toBeDefined();
+      await act(async () => {
+        expect(component).toBeDefined();
+      });
     });
   });
 });

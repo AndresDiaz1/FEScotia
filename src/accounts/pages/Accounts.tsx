@@ -1,19 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { IonContent, IonLabel, IonLoading, IonPage } from '@ionic/react';
-import { useDispatch, useSelector } from 'react-redux';
-import { accountsSelector, fetchAccounts } from '../AccountsStore';
-import { loginSelector } from '../../login/LoginStore';
+import { useSelector } from 'react-redux';
+import { accountsSelector } from '../AccountsStore';
 import SimpleHeader from '../../sharedComponents/SimpleHeader/SimpleHeader';
 
 const AccountsPage: React.FC = () => {
   const { accounts, isLoading, errorMessage } = useSelector(accountsSelector);
-  const { user } = useSelector(loginSelector);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(fetchAccounts(user.id));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   const renderAccountsList = () => {
     return accounts.map((account) => (

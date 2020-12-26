@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
@@ -24,11 +24,28 @@ import './theme/variables.scss';
 import { PATHS } from './AppConstants';
 import LoginPage from './login/pages/Login';
 import AccountsPage from './accounts/pages/Accounts';
-import { useSelector } from 'react-redux';
-import { loginSelector } from './login/LoginStore';
+import { getParsedDBItem } from './data/mainDB';
+import { User } from './login/LoginTypes';
+import { useDispatch } from 'react-redux';
+import { setLocallySavedUser } from './login/LoginStore';
+import { fetchAccounts } from './accounts/AccountsStore';
 
 const App: React.FC = () => {
-  const { user } = useSelector(loginSelector);
+  const [savedUser, setSavedUser] = useState<User>();
+  const dispatch = useDispatch();
+
+  const validateSavedUser = async () => {
+    const savedUser = await getParsedDBItem('user');
+    setSavedUser(savedUser);
+    if (savedUser?.id) {
+      dispatch(setLocallySavedUser(savedUser));
+      dispatch(fetchAccounts(savedUser.id));
+    }
+  };
+
+  useEffect(() => {
+    validateSavedUser();
+  }, []);
 
   return (
     <IonApp>
@@ -38,7 +55,7 @@ const App: React.FC = () => {
         <Route
           path="/"
           render={() => {
-            return user.id ? <Redirect to={PATHS.ACCOUNTS} /> : <Redirect to={PATHS.LOGIN} />;
+            return savedUser?.id ? <Redirect to={PATHS.ACCOUNTS} /> : <Redirect to={PATHS.LOGIN} />;
           }}
         />{' '}
       </IonReactRouter>
