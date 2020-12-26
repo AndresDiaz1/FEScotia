@@ -2,6 +2,7 @@ import React from 'react';
 import { IonGrid, IonLabel, IonRow } from '@ionic/react';
 import './AccountCard.scss';
 import { Account } from '../AccountTypes';
+import { formatCurrency } from '../../utils/Utils';
 
 const AccountCard: React.FC<Account> = ({ id, accountType, availableValue }) => {
   return (
@@ -12,7 +13,7 @@ const AccountCard: React.FC<Account> = ({ id, accountType, availableValue }) => 
           <IonLabel> - {accountType}</IonLabel>
         </IonRow>
         <IonRow>
-          <IonLabel>{availableValue}</IonLabel>
+          <IonLabel>{formatCurrency(availableValue)}</IonLabel>
         </IonRow>
         <IonRow>
           <IonLabel>Available amount</IonLabel>

@@ -26,3 +26,10 @@ export const orderAccounts = (accounts: Account[]): Account[] => {
   );
   return [...savingsAccounts, ...checkingAccounts, ...creditCardsAccounts];
 };
+
+export const formatCurrency = (value: number): string => {
+  return new Intl.NumberFormat('es-CO', {
+    style: 'currency',
+    currency: 'COP',
+  }).format(value);
+};

@@ -55,7 +55,7 @@ exports[`AccountCard component Initial state Should render 1`] = `
                     forwardedRef={null}
                   >
                     <ion-label>
-                      33
+                      COP 33.00
                     </ion-label>
                   </IonLabel>
                 </ForwardRef(IonLabel)>

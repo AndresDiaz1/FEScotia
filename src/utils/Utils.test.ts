@@ -1,4 +1,4 @@
-import { orderAccounts } from './Utils';
+import { formatCurrency, orderAccounts } from './Utils';
 
 const accounts = [
   {
@@ -51,6 +51,11 @@ describe('Utils functions', () => {
       const orderedAccounts = orderAccounts(accounts);
       expect(orderedAccounts.length).toEqual(accounts.length);
       expect(orderedAccounts[0]).toEqual(accounts[2]);
+    });
+  });
+  describe('formatCurrency functions', () => {
+    it('should format to COP currency', () => {
+      expect(formatCurrency(2366000).substring(4)).toBe('2,366,000.00');
     });
   });
 });
