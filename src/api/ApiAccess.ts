@@ -2,6 +2,7 @@ import { pipe } from 'fp-ts/lib/function';
 import { BASE_URL } from '../AppConstants';
 import { User } from '../login/LoginTypes';
 import { Account } from '../accounts/AccountTypes';
+import { Detail } from '../details/DetailsTypes';
 
 export default class API {
   private static processJSON = async (jsonResponse: Promise<Response>): Promise<User[]> => {
@@ -20,7 +21,7 @@ export default class API {
     return pipe(fetch(url), this.processJSON);
   }
 
-  static async get(endpoint: string): Promise<User[] | Account[]> {
+  static async get(endpoint: string): Promise<User[] | Account[] | Detail[]> {
     return this.executeFetch(endpoint);
   }
 }

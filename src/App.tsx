@@ -29,6 +29,7 @@ import { User } from './login/LoginTypes';
 import { useDispatch } from 'react-redux';
 import { setLocallySavedUser } from './login/LoginStore';
 import { fetchAccounts } from './accounts/AccountsStore';
+import DetailsPage from './details/pages/Details';
 
 const App: React.FC = () => {
   const [savedUser, setSavedUser] = useState<User>();
@@ -53,6 +54,7 @@ const App: React.FC = () => {
       <IonReactRouter>
         <Route path={PATHS.LOGIN} component={LoginPage} exact={true} />
         <Route path={PATHS.ACCOUNTS} component={AccountsPage} exact={true} />
+        <Route path={PATHS.DETAILS} component={DetailsPage} exact={true} />
         <Route
           path="/"
           render={() => {

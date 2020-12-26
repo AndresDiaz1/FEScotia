@@ -1,103 +1,130 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AccountCard component Initial state Should render 1`] = `
-<AccountCard
-  accountType="savings"
-  availableValue={33}
-  clientId={1}
-  id="1"
-  status={60}
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
 >
-  <div
-    className="account-card__container ion-padding"
+  <AccountCard
+    accountType="savings"
+    availableValue={33}
+    clientId={1}
+    id="1"
+    status={60}
   >
-    <ForwardRef(IonGrid)>
-      <IonGrid
-        forwardedRef={null}
-      >
-        <ion-grid>
-          <ForwardRef(IonRow)>
-            <IonRow
-              forwardedRef={null}
-            >
-              <ion-row>
-                <ForwardRef(IonLabel)>
-                  <IonLabel
-                    forwardedRef={null}
-                  >
-                    <ion-label>
-                       · 
-                      1
-                       
-                    </ion-label>
-                  </IonLabel>
-                </ForwardRef(IonLabel)>
-                <ForwardRef(IonLabel)>
-                  <IonLabel
-                    forwardedRef={null}
-                  >
-                    <ion-label>
-                       - 
-                      savings
-                    </ion-label>
-                  </IonLabel>
-                </ForwardRef(IonLabel)>
-              </ion-row>
-            </IonRow>
-          </ForwardRef(IonRow)>
-          <ForwardRef(IonRow)>
-            <IonRow
-              forwardedRef={null}
-            >
-              <ion-row>
-                <ForwardRef(IonLabel)>
-                  <IonLabel
-                    forwardedRef={null}
-                  >
-                    <ion-label>
-                      COP 33.00
-                    </ion-label>
-                  </IonLabel>
-                </ForwardRef(IonLabel)>
-              </ion-row>
-            </IonRow>
-          </ForwardRef(IonRow)>
-          <ForwardRef(IonRow)>
-            <IonRow
-              forwardedRef={null}
-            >
-              <ion-row>
-                <ForwardRef(IonLabel)>
-                  <IonLabel
-                    forwardedRef={null}
-                  >
-                    <ion-label>
-                      Available amount
-                    </ion-label>
-                  </IonLabel>
-                </ForwardRef(IonLabel)>
-              </ion-row>
-            </IonRow>
-          </ForwardRef(IonRow)>
-          <ForwardRef(IonRow)
-            className="ion-justify-content-center"
-          >
-            <IonRow
+    <div
+      className="account-card__container ion-padding"
+    >
+      <ForwardRef(IonGrid)>
+        <IonGrid
+          forwardedRef={null}
+        >
+          <ion-grid>
+            <ForwardRef(IonRow)>
+              <IonRow
+                forwardedRef={null}
+              >
+                <ion-row>
+                  <ForwardRef(IonLabel)>
+                    <IonLabel
+                      forwardedRef={null}
+                    >
+                      <ion-label>
+                         · 
+                        1
+                         
+                      </ion-label>
+                    </IonLabel>
+                  </ForwardRef(IonLabel)>
+                  <ForwardRef(IonLabel)>
+                    <IonLabel
+                      forwardedRef={null}
+                    >
+                      <ion-label>
+                         - 
+                        savings
+                      </ion-label>
+                    </IonLabel>
+                  </ForwardRef(IonLabel)>
+                </ion-row>
+              </IonRow>
+            </ForwardRef(IonRow)>
+            <ForwardRef(IonRow)>
+              <IonRow
+                forwardedRef={null}
+              >
+                <ion-row>
+                  <ForwardRef(IonLabel)>
+                    <IonLabel
+                      forwardedRef={null}
+                    >
+                      <ion-label>
+                        COP 33.00
+                      </ion-label>
+                    </IonLabel>
+                  </ForwardRef(IonLabel)>
+                </ion-row>
+              </IonRow>
+            </ForwardRef(IonRow)>
+            <ForwardRef(IonRow)>
+              <IonRow
+                forwardedRef={null}
+              >
+                <ion-row>
+                  <ForwardRef(IonLabel)>
+                    <IonLabel
+                      forwardedRef={null}
+                    >
+                      <ion-label>
+                        Available amount
+                      </ion-label>
+                    </IonLabel>
+                  </ForwardRef(IonLabel)>
+                </ion-row>
+              </IonRow>
+            </ForwardRef(IonRow)>
+            <ForwardRef(IonRow)
               className="ion-justify-content-center"
-              forwardedRef={null}
             >
-              <ion-row>
-                <a
-                  href=""
-                >
-                  See Details
-                </a>
-              </ion-row>
-            </IonRow>
-          </ForwardRef(IonRow)>
-        </ion-grid>
-      </IonGrid>
-    </ForwardRef(IonGrid)>
-  </div>
-</AccountCard>
+              <IonRow
+                className="ion-justify-content-center"
+                forwardedRef={null}
+              >
+                <ion-row>
+                  <ForwardRef(IonLabel)
+                    className="account-card__link"
+                    color="primary"
+                    onClick={[Function]}
+                  >
+                    <IonLabel
+                      className="account-card__link"
+                      color="primary"
+                      forwardedRef={null}
+                      onClick={[Function]}
+                    >
+                      <ion-label
+                        color="primary"
+                        onClick={[Function]}
+                      >
+                        See Details
+                      </ion-label>
+                    </IonLabel>
+                  </ForwardRef(IonLabel)>
+                </ion-row>
+              </IonRow>
+            </ForwardRef(IonRow)>
+          </ion-grid>
+        </IonGrid>
+      </ForwardRef(IonGrid)>
+    </div>
+  </AccountCard>
+</Provider>
 `;
