@@ -19,7 +19,7 @@ export default class API {
     return pipe(fetch(url), this.processJSON);
   }
 
-  static async get(endpoint: string): Promise<User[]> {
+  static async get(endpoint: string): Promise<User[] | Account[]> {
     return this.executeFetch(endpoint);
   }
 }
