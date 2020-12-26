@@ -12,13 +12,8 @@ interface ClientCredentials {
 export const signIn = createAsyncThunk(
   `${STORE_NAME}/signIn`,
   async ({ name, CC }: ClientCredentials): Promise<User | null> => {
-    const clients = await LoginAPI.getClients();
-    const user = clients.filter((client) => `${client.CC.toString()}` === CC && client.name === name);
-    if (user.length) {
-      return user[0];
-    } else {
-      return Promise.reject(null);
-    }
+    const client = await LoginAPI.getClient(name, CC);
+    return client.length ? client[0] : Promise.reject(null);
   }
 );
 

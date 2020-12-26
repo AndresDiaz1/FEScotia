@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { IonButton, IonContent, IonLoading, IonPage } from '@ionic/react';
+import { IonButton, IonContent, IonLabel, IonLoading, IonPage } from '@ionic/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash, faMoneyCheck } from '@fortawesome/free-solid-svg-icons';
 import './Login.scss';
@@ -13,7 +13,7 @@ const LoginPage: React.FC = () => {
   const [userName, setUserName] = useState<string>('');
   const [userPass, setUserPassword] = useState<string>('');
   const [isPasswordVisible, setPasswordVisibility] = useState<boolean>(false);
-  const { user, logginIn } = useSelector(loginSelector);
+  const { user, logginIn, errorMessage } = useSelector(loginSelector);
   const dispatch = useDispatch();
   const history = useHistory();
 
@@ -64,13 +64,11 @@ const LoginPage: React.FC = () => {
               <IonButton color="scotia-red ion-margin-top" expand="full" onClick={() => login()}>
                 Log in
               </IonButton>
+              {errorMessage ? <IonLabel color="danger"> {errorMessage}</IonLabel> : <></>}
             </form>
           </div>
         </div>
-        <IonLoading
-        isOpen={logginIn}
-        message={'Please wait...'}
-      />
+        <IonLoading isOpen={logginIn} message={'Please wait...'} />
       </IonContent>
     </IonPage>
   );

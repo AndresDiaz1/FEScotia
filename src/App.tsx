@@ -28,23 +28,22 @@ import { useSelector } from 'react-redux';
 import { loginSelector } from './login/LoginStore';
 
 const App: React.FC = () => {
-  const { user, } = useSelector(loginSelector);
+  const { user } = useSelector(loginSelector);
 
-  return(
+  return (
     <IonApp>
-    <IonReactRouter>
-      <Route path={PATHS.LOGIN} component={LoginPage} exact={true} />
-      <Route path={PATHS.ACCOUNTS} component={AccountsPage} exact={true} />
-      <Route
+      <IonReactRouter>
+        <Route path={PATHS.LOGIN} component={LoginPage} exact={true} />
+        <Route path={PATHS.ACCOUNTS} component={AccountsPage} exact={true} />
+        <Route
           path="/"
           render={() => {
             return user.id ? <Redirect to={PATHS.ACCOUNTS} /> : <Redirect to={PATHS.LOGIN} />;
           }}
-        />    </IonReactRouter>
-  </IonApp>
+        />{' '}
+      </IonReactRouter>
+    </IonApp>
   );
-}
-
-
+};
 
 export default App;
