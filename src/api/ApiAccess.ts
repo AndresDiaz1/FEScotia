@@ -1,4 +1,5 @@
 import { pipe } from 'fp-ts/lib/function';
+import { BASE_URL } from '../AppConstants';
 import { User } from '../login/LoginTypes';
 
 export default class API {
@@ -13,7 +14,6 @@ export default class API {
   };
 
   private static async executeFetch(endpoint: string): Promise<User[]> {
-    const BASE_URL = 'https://5fe296aa7a94870017682620.mockapi.io/api/v1/';
     const url = BASE_URL + endpoint;
 
     return pipe(fetch(url), this.processJSON);

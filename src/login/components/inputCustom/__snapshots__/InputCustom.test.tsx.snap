@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input custom Component Initial state Should render 1`] = `
+<InputFloatingLabel
+  label="Test"
+  onChange={[Function]}
+>
+  <ForwardRef(IonItem)
+    className=""
+  >
+    <IonItem
+      className=""
+      forwardedRef={null}
+    >
+      <ion-item
+        onClick={[Function]}
+      >
+        <ForwardRef(IonLabel)
+          className="ion-hide"
+          position="floating"
+        >
+          <IonLabel
+            className="ion-hide"
+            forwardedRef={null}
+            position="floating"
+          >
+            <ion-label
+              position="floating"
+            >
+              Test
+            </ion-label>
+          </IonLabel>
+        </ForwardRef(IonLabel)>
+        <ForwardRef(IonInput)
+          autofocus={true}
+          name="Test"
+          onIonChange={[Function]}
+          placeholder="Test"
+          type="text"
+          value=""
+        >
+          <IonInput
+            autofocus={true}
+            forwardedRef={null}
+            name="Test"
+            onIonChange={[Function]}
+            placeholder="Test"
+            type="text"
+            value=""
+          >
+            <ion-input
+              name="Test"
+              placeholder="Test"
+              type="text"
+              value=""
+            />
+          </IonInput>
+        </ForwardRef(IonInput)>
+      </ion-item>
+    </IonItem>
+  </ForwardRef(IonItem)>
+</InputFloatingLabel>
+`;

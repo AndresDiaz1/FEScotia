@@ -24,15 +24,27 @@ import './theme/variables.scss';
 import { PATHS } from './AppConstants';
 import LoginPage from './login/pages/Login';
 import AccountsPage from './accounts/pages/Accounts';
+import { useSelector } from 'react-redux';
+import { loginSelector } from './login/LoginStore';
 
-const App: React.FC = () => (
-  <IonApp>
+const App: React.FC = () => {
+  const { user, } = useSelector(loginSelector);
+
+  return(
+    <IonApp>
     <IonReactRouter>
       <Route path={PATHS.LOGIN} component={LoginPage} exact={true} />
       <Route path={PATHS.ACCOUNTS} component={AccountsPage} exact={true} />
-      <Route exact path="/" render={() => <Redirect to={PATHS.LOGIN} />} />
-    </IonReactRouter>
+      <Route
+          path="/"
+          render={() => {
+            return user.id ? <Redirect to={PATHS.ACCOUNTS} /> : <Redirect to={PATHS.LOGIN} />;
+          }}
+        />    </IonReactRouter>
   </IonApp>
-);
+  );
+}
+
+
 
 export default App;

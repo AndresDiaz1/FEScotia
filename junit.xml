@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="7" failures="0" time="5.322">
+  <testsuite name="App component" errors="0" failures="0" skipped="0" timestamp="2020-12-26T15:44:08" time="2.679" tests="1">
+    <testcase classname="App component Initial state Should render" name="App component Initial state Should render" time="0.152">
+    </testcase>
+  </testsuite>
+  <testsuite name="Input custom Component" errors="0" failures="0" skipped="0" timestamp="2020-12-26T15:44:08" time="2.671" tests="1">
+    <testcase classname="Input custom Component Initial state Should render" name="Input custom Component Initial state Should render" time="0.086">
+    </testcase>
+  </testsuite>
+  <testsuite name="LoginApi access helper class" errors="0" failures="0" skipped="0" timestamp="2020-12-26T15:44:11" time="0.424" tests="1">
+    <testcase classname="LoginApi access helper class getClients method should make a call correctly" name="LoginApi access helper class getClients method should make a call correctly" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="Login component" errors="0" failures="0" skipped="0" timestamp="2020-12-26T15:44:09" time="2.872" tests="2">
+    <testcase classname="Login component Initial state Should render" name="Login component Initial state Should render" time="0.134">
+    </testcase>
+    <testcase classname="Login component Initial state Should render with loading" name="Login component Initial state Should render with loading" time="0.028">
+    </testcase>
+  </testsuite>
+  <testsuite name="AppStore Integration Tests" errors="0" failures="0" skipped="0" timestamp="2020-12-26T15:44:11" time="0.418" tests="1">
+    <testcase classname="AppStore Integration Tests Initializes the store" name="AppStore Integration Tests Initializes the store" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="API access helper class" errors="0" failures="0" skipped="0" timestamp="2020-12-26T15:44:11" time="0.259" tests="1">
+    <testcase classname="API access helper class get method should make a call correctly" name="API access helper class get method should make a call correctly" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,653 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login component Initial state Should render 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <LoginPage>
+    <ForwardRef(IonPage)>
+      <IonPage
+        forwardedRef={null}
+      >
+        <div
+          className="ion-page"
+        >
+          <ForwardRef(IonContent)
+            className="login-page ion-padding"
+          >
+            <IonContent
+              className="login-page ion-padding"
+              forwardedRef={null}
+            >
+              <ion-content>
+                <div
+                  className="login-page__content"
+                >
+                  <div
+                    className="login-page__image-container"
+                  >
+                    <FontAwesomeIcon
+                      border={false}
+                      className=""
+                      color="primary"
+                      fixedWidth={false}
+                      flip={null}
+                      icon={
+                        Object {
+                          "icon": Array [
+                            640,
+                            512,
+                            Array [],
+                            "f53c",
+                            "M0 448c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V128H0v320zm448-208c0-8.84 7.16-16 16-16h96c8.84 0 16 7.16 16 16v32c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-32zm0 120c0-4.42 3.58-8 8-8h112c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H456c-4.42 0-8-3.58-8-8v-16zM64 264c0-4.42 3.58-8 8-8h304c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8v-16zm0 96c0-4.42 3.58-8 8-8h176c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8v-16zM624 32H16C7.16 32 0 39.16 0 48v48h640V48c0-8.84-7.16-16-16-16z",
+                          ],
+                          "iconName": "money-check",
+                          "prefix": "fas",
+                        }
+                      }
+                      inverse={false}
+                      listItem={false}
+                      mask={null}
+                      pull={null}
+                      pulse={false}
+                      rotation={null}
+                      size="5x"
+                      spin={false}
+                      swapOpacity={false}
+                      symbol={false}
+                      title=""
+                      transform={null}
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-money-check fa-w-20 fa-5x "
+                        color="primary"
+                        data-icon="money-check"
+                        data-prefix="fas"
+                        focusable="false"
+                        role="img"
+                        style={Object {}}
+                        viewBox="0 0 640 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 448c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V128H0v320zm448-208c0-8.84 7.16-16 16-16h96c8.84 0 16 7.16 16 16v32c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-32zm0 120c0-4.42 3.58-8 8-8h112c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H456c-4.42 0-8-3.58-8-8v-16zM64 264c0-4.42 3.58-8 8-8h304c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8v-16zm0 96c0-4.42 3.58-8 8-8h176c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8v-16zM624 32H16C7.16 32 0 39.16 0 48v48h640V48c0-8.84-7.16-16-16-16z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </FontAwesomeIcon>
+                  </div>
+                  <div
+                    className="login-page__form"
+                  >
+                    <form>
+                      <InputFloatingLabel
+                        containerClassName="login-page__input"
+                        initialValue=""
+                        label="Name"
+                        onChange={[Function]}
+                        type="text"
+                      >
+                        <ForwardRef(IonItem)
+                          className="login-page__input"
+                        >
+                          <IonItem
+                            className="login-page__input"
+                            forwardedRef={null}
+                          >
+                            <ion-item
+                              onClick={[Function]}
+                            >
+                              <ForwardRef(IonLabel)
+                                className="ion-hide"
+                                position="floating"
+                              >
+                                <IonLabel
+                                  className="ion-hide"
+                                  forwardedRef={null}
+                                  position="floating"
+                                >
+                                  <ion-label
+                                    position="floating"
+                                  >
+                                    Name
+                                  </ion-label>
+                                </IonLabel>
+                              </ForwardRef(IonLabel)>
+                              <ForwardRef(IonInput)
+                                autofocus={true}
+                                name="Name"
+                                onIonChange={[Function]}
+                                placeholder="Name"
+                                type="text"
+                                value=""
+                              >
+                                <IonInput
+                                  autofocus={true}
+                                  forwardedRef={null}
+                                  name="Name"
+                                  onIonChange={[Function]}
+                                  placeholder="Name"
+                                  type="text"
+                                  value=""
+                                >
+                                  <ion-input
+                                    name="Name"
+                                    placeholder="Name"
+                                    type="text"
+                                    value=""
+                                  />
+                                </IonInput>
+                              </ForwardRef(IonInput)>
+                            </ion-item>
+                          </IonItem>
+                        </ForwardRef(IonItem)>
+                      </InputFloatingLabel>
+                      <InputFloatingLabel
+                        containerClassName="ion-margin-top login-page__input"
+                        iconName={
+                          Object {
+                            "icon": Array [
+                              576,
+                              512,
+                              Array [],
+                              "f06e",
+                              "M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z",
+                            ],
+                            "iconName": "eye",
+                            "prefix": "fas",
+                          }
+                        }
+                        initialValue=""
+                        inputTypeHandler={[Function]}
+                        label="C.C"
+                        onChange={[Function]}
+                        type="password"
+                      >
+                        <ForwardRef(IonItem)
+                          className="ion-margin-top login-page__input"
+                        >
+                          <IonItem
+                            className="ion-margin-top login-page__input"
+                            forwardedRef={null}
+                          >
+                            <ion-item
+                              onClick={[Function]}
+                            >
+                              <div
+                                className="login-page__reveal-password-container"
+                                onClick={[Function]}
+                              >
+                                <FontAwesomeIcon
+                                  border={false}
+                                  className="login-page__reveal-password-icon"
+                                  fixedWidth={false}
+                                  flip={null}
+                                  icon={
+                                    Object {
+                                      "icon": Array [
+                                        576,
+                                        512,
+                                        Array [],
+                                        "f06e",
+                                        "M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z",
+                                      ],
+                                      "iconName": "eye",
+                                      "prefix": "fas",
+                                    }
+                                  }
+                                  inverse={false}
+                                  listItem={false}
+                                  mask={null}
+                                  pull={null}
+                                  pulse={false}
+                                  rotation={null}
+                                  size={null}
+                                  spin={false}
+                                  swapOpacity={false}
+                                  symbol={false}
+                                  title=""
+                                  transform={null}
+                                >
+                                  <svg
+                                    aria-hidden="true"
+                                    className="svg-inline--fa fa-eye fa-w-18 login-page__reveal-password-icon"
+                                    data-icon="eye"
+                                    data-prefix="fas"
+                                    focusable="false"
+                                    role="img"
+                                    style={Object {}}
+                                    viewBox="0 0 576 512"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"
+                                      fill="currentColor"
+                                      style={Object {}}
+                                    />
+                                  </svg>
+                                </FontAwesomeIcon>
+                              </div>
+                              <ForwardRef(IonLabel)
+                                className="ion-hide"
+                                position="floating"
+                              >
+                                <IonLabel
+                                  className="ion-hide"
+                                  forwardedRef={null}
+                                  position="floating"
+                                >
+                                  <ion-label
+                                    position="floating"
+                                  >
+                                    C.C
+                                  </ion-label>
+                                </IonLabel>
+                              </ForwardRef(IonLabel)>
+                              <ForwardRef(IonInput)
+                                autofocus={true}
+                                name="C.C"
+                                onIonChange={[Function]}
+                                placeholder="C.C"
+                                type="password"
+                                value=""
+                              >
+                                <IonInput
+                                  autofocus={true}
+                                  forwardedRef={null}
+                                  name="C.C"
+                                  onIonChange={[Function]}
+                                  placeholder="C.C"
+                                  type="password"
+                                  value=""
+                                >
+                                  <ion-input
+                                    name="C.C"
+                                    placeholder="C.C"
+                                    type="password"
+                                    value=""
+                                  />
+                                </IonInput>
+                              </ForwardRef(IonInput)>
+                            </ion-item>
+                          </IonItem>
+                        </ForwardRef(IonItem)>
+                      </InputFloatingLabel>
+                      <ForwardRef(IonButton)
+                        color="scotia-red ion-margin-top"
+                        expand="full"
+                        onClick={[Function]}
+                      >
+                        <IonButton
+                          color="scotia-red ion-margin-top"
+                          expand="full"
+                          forwardedRef={null}
+                          onClick={[Function]}
+                        >
+                          <ion-button
+                            color="scotia-red ion-margin-top"
+                            expand="full"
+                            onClick={[Function]}
+                          >
+                            Log in
+                          </ion-button>
+                        </IonButton>
+                      </ForwardRef(IonButton)>
+                    </form>
+                  </div>
+                </div>
+                <ForwardRef
+                  isOpen={false}
+                  message="Please wait..."
+                >
+                  <IonLoading
+                    forwardedRef={null}
+                    isOpen={false}
+                    message="Please wait..."
+                  />
+                </ForwardRef>
+              </ion-content>
+            </IonContent>
+          </ForwardRef(IonContent)>
+        </div>
+      </IonPage>
+    </ForwardRef(IonPage)>
+  </LoginPage>
+</Provider>
+`;
+
+exports[`Login component Initial state Should render with loading 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <LoginPage>
+    <ForwardRef(IonPage)>
+      <IonPage
+        forwardedRef={null}
+      >
+        <div
+          className="ion-page"
+        >
+          <ForwardRef(IonContent)
+            className="login-page ion-padding"
+          >
+            <IonContent
+              className="login-page ion-padding"
+              forwardedRef={null}
+            >
+              <ion-content>
+                <div
+                  className="login-page__content"
+                >
+                  <div
+                    className="login-page__image-container"
+                  >
+                    <FontAwesomeIcon
+                      border={false}
+                      className=""
+                      color="primary"
+                      fixedWidth={false}
+                      flip={null}
+                      icon={
+                        Object {
+                          "icon": Array [
+                            640,
+                            512,
+                            Array [],
+                            "f53c",
+                            "M0 448c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V128H0v320zm448-208c0-8.84 7.16-16 16-16h96c8.84 0 16 7.16 16 16v32c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-32zm0 120c0-4.42 3.58-8 8-8h112c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H456c-4.42 0-8-3.58-8-8v-16zM64 264c0-4.42 3.58-8 8-8h304c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8v-16zm0 96c0-4.42 3.58-8 8-8h176c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8v-16zM624 32H16C7.16 32 0 39.16 0 48v48h640V48c0-8.84-7.16-16-16-16z",
+                          ],
+                          "iconName": "money-check",
+                          "prefix": "fas",
+                        }
+                      }
+                      inverse={false}
+                      listItem={false}
+                      mask={null}
+                      pull={null}
+                      pulse={false}
+                      rotation={null}
+                      size="5x"
+                      spin={false}
+                      swapOpacity={false}
+                      symbol={false}
+                      title=""
+                      transform={null}
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-money-check fa-w-20 fa-5x "
+                        color="primary"
+                        data-icon="money-check"
+                        data-prefix="fas"
+                        focusable="false"
+                        role="img"
+                        style={Object {}}
+                        viewBox="0 0 640 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 448c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V128H0v320zm448-208c0-8.84 7.16-16 16-16h96c8.84 0 16 7.16 16 16v32c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-32zm0 120c0-4.42 3.58-8 8-8h112c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H456c-4.42 0-8-3.58-8-8v-16zM64 264c0-4.42 3.58-8 8-8h304c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8v-16zm0 96c0-4.42 3.58-8 8-8h176c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8v-16zM624 32H16C7.16 32 0 39.16 0 48v48h640V48c0-8.84-7.16-16-16-16z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </FontAwesomeIcon>
+                  </div>
+                  <div
+                    className="login-page__form"
+                  >
+                    <form>
+                      <InputFloatingLabel
+                        containerClassName="login-page__input"
+                        initialValue=""
+                        label="Name"
+                        onChange={[Function]}
+                        type="text"
+                      >
+                        <ForwardRef(IonItem)
+                          className="login-page__input"
+                        >
+                          <IonItem
+                            className="login-page__input"
+                            forwardedRef={null}
+                          >
+                            <ion-item
+                              onClick={[Function]}
+                            >
+                              <ForwardRef(IonLabel)
+                                className="ion-hide"
+                                position="floating"
+                              >
+                                <IonLabel
+                                  className="ion-hide"
+                                  forwardedRef={null}
+                                  position="floating"
+                                >
+                                  <ion-label
+                                    position="floating"
+                                  >
+                                    Name
+                                  </ion-label>
+                                </IonLabel>
+                              </ForwardRef(IonLabel)>
+                              <ForwardRef(IonInput)
+                                autofocus={true}
+                                name="Name"
+                                onIonChange={[Function]}
+                                placeholder="Name"
+                                type="text"
+                                value=""
+                              >
+                                <IonInput
+                                  autofocus={true}
+                                  forwardedRef={null}
+                                  name="Name"
+                                  onIonChange={[Function]}
+                                  placeholder="Name"
+                                  type="text"
+                                  value=""
+                                >
+                                  <ion-input
+                                    name="Name"
+                                    placeholder="Name"
+                                    type="text"
+                                    value=""
+                                  />
+                                </IonInput>
+                              </ForwardRef(IonInput)>
+                            </ion-item>
+                          </IonItem>
+                        </ForwardRef(IonItem)>
+                      </InputFloatingLabel>
+                      <InputFloatingLabel
+                        containerClassName="ion-margin-top login-page__input"
+                        iconName={
+                          Object {
+                            "icon": Array [
+                              576,
+                              512,
+                              Array [],
+                              "f06e",
+                              "M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z",
+                            ],
+                            "iconName": "eye",
+                            "prefix": "fas",
+                          }
+                        }
+                        initialValue=""
+                        inputTypeHandler={[Function]}
+                        label="C.C"
+                        onChange={[Function]}
+                        type="password"
+                      >
+                        <ForwardRef(IonItem)
+                          className="ion-margin-top login-page__input"
+                        >
+                          <IonItem
+                            className="ion-margin-top login-page__input"
+                            forwardedRef={null}
+                          >
+                            <ion-item
+                              onClick={[Function]}
+                            >
+                              <div
+                                className="login-page__reveal-password-container"
+                                onClick={[Function]}
+                              >
+                                <FontAwesomeIcon
+                                  border={false}
+                                  className="login-page__reveal-password-icon"
+                                  fixedWidth={false}
+                                  flip={null}
+                                  icon={
+                                    Object {
+                                      "icon": Array [
+                                        576,
+                                        512,
+                                        Array [],
+                                        "f06e",
+                                        "M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z",
+                                      ],
+                                      "iconName": "eye",
+                                      "prefix": "fas",
+                                    }
+                                  }
+                                  inverse={false}
+                                  listItem={false}
+                                  mask={null}
+                                  pull={null}
+                                  pulse={false}
+                                  rotation={null}
+                                  size={null}
+                                  spin={false}
+                                  swapOpacity={false}
+                                  symbol={false}
+                                  title=""
+                                  transform={null}
+                                >
+                                  <svg
+                                    aria-hidden="true"
+                                    className="svg-inline--fa fa-eye fa-w-18 login-page__reveal-password-icon"
+                                    data-icon="eye"
+                                    data-prefix="fas"
+                                    focusable="false"
+                                    role="img"
+                                    style={Object {}}
+                                    viewBox="0 0 576 512"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"
+                                      fill="currentColor"
+                                      style={Object {}}
+                                    />
+                                  </svg>
+                                </FontAwesomeIcon>
+                              </div>
+                              <ForwardRef(IonLabel)
+                                className="ion-hide"
+                                position="floating"
+                              >
+                                <IonLabel
+                                  className="ion-hide"
+                                  forwardedRef={null}
+                                  position="floating"
+                                >
+                                  <ion-label
+                                    position="floating"
+                                  >
+                                    C.C
+                                  </ion-label>
+                                </IonLabel>
+                              </ForwardRef(IonLabel)>
+                              <ForwardRef(IonInput)
+                                autofocus={true}
+                                name="C.C"
+                                onIonChange={[Function]}
+                                placeholder="C.C"
+                                type="password"
+                                value=""
+                              >
+                                <IonInput
+                                  autofocus={true}
+                                  forwardedRef={null}
+                                  name="C.C"
+                                  onIonChange={[Function]}
+                                  placeholder="C.C"
+                                  type="password"
+                                  value=""
+                                >
+                                  <ion-input
+                                    name="C.C"
+                                    placeholder="C.C"
+                                    type="password"
+                                    value=""
+                                  />
+                                </IonInput>
+                              </ForwardRef(IonInput)>
+                            </ion-item>
+                          </IonItem>
+                        </ForwardRef(IonItem)>
+                      </InputFloatingLabel>
+                      <ForwardRef(IonButton)
+                        color="scotia-red ion-margin-top"
+                        expand="full"
+                        onClick={[Function]}
+                      >
+                        <IonButton
+                          color="scotia-red ion-margin-top"
+                          expand="full"
+                          forwardedRef={null}
+                          onClick={[Function]}
+                        >
+                          <ion-button
+                            color="scotia-red ion-margin-top"
+                            expand="full"
+                            onClick={[Function]}
+                          >
+                            Log in
+                          </ion-button>
+                        </IonButton>
+                      </ForwardRef(IonButton)>
+                    </form>
+                  </div>
+                </div>
+                <ForwardRef
+                  isOpen={true}
+                  message="Please wait..."
+                >
+                  <IonLoading
+                    forwardedRef={null}
+                    isOpen={true}
+                    message="Please wait..."
+                  />
+                </ForwardRef>
+              </ion-content>
+            </IonContent>
+          </ForwardRef(IonContent)>
+        </div>
+      </IonPage>
+    </ForwardRef(IonPage)>
+  </LoginPage>
+</Provider>
+`;
