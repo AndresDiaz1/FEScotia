@@ -3,6 +3,7 @@ import { IonContent, IonLabel, IonLoading, IonPage } from '@ionic/react';
 import { useDispatch, useSelector } from 'react-redux';
 import { accountsSelector, fetchAccounts } from '../AccountsStore';
 import { loginSelector } from '../../login/LoginStore';
+import SimpleHeader from '../../sharedComponents/SimpleHeader/SimpleHeader';
 
 const AccountsPage: React.FC = () => {
   const { accounts, isLoading, errorMessage } = useSelector(accountsSelector);
@@ -32,6 +33,7 @@ const AccountsPage: React.FC = () => {
 
   return (
     <IonPage>
+      <SimpleHeader title={'My Accounts'} />
       <IonContent>
         {accounts.length ? renderAccountsList() : renderNoAccounts()}
 
