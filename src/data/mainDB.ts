@@ -20,15 +20,6 @@ export const getParsedDBItem = async (key: string): Promise<any> => {
   return value ? JSON.parse(value) : null;
 };
 
-export const removeDBItem = async (key: string): Promise<void> => {
-  await Storage.remove({ key: key });
-};
-
-export const getDBKeys = async (): Promise<Array<string>> => {
-  const { keys } = await Storage.keys();
-  return keys;
-};
-
 export const clearDB = async (): Promise<void> => {
   await Storage.clear();
 };
