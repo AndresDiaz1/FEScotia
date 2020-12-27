@@ -16,8 +16,8 @@ Run `npm run test` to run tests and keep alive or `npm run test:ci` to generate 
 - Movements https://5fe296aa7a94870017682620.mockapi.io/api/v1/movement
 
 ## User to test
-Username: Francis
-CC: 17205
+**Username:** Francis
+**CC:** 17205
 
 ## Special libraries used
 
