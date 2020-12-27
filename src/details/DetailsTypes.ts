@@ -8,7 +8,7 @@ export interface Detail {
 
 export interface DetailState {
   isLoading: boolean;
-  details: Account[];
+  details: Detail[];
   errorMessage: string;
 }
 

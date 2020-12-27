@@ -1,6 +1,7 @@
 import { pipe } from 'fp-ts/lib/function';
 import { AccountTypes } from '../AppConstants';
 import { Account } from '../accounts/AccountTypes';
+import { Detail } from '../details/DetailsTypes';
 
 export const filterAccountByType = (accounts: Account[], type: string): Account[] => {
   return accounts.filter((account) => account.accountType === type);
@@ -32,4 +33,8 @@ export const formatCurrency = (value: number): string => {
     style: 'currency',
     currency: 'COP',
   }).format(value);
+};
+
+export const orderByDate = (details: Detail[]): Detail[] => {
+  return details.sort((a: Detail, b: Detail) => (a.transactionDate < b.transactionDate ? 1 : -1));
 };

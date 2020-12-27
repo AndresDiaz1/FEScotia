@@ -1,4 +1,5 @@
-import { formatCurrency, orderAccounts } from './Utils';
+import { Detail } from '../details/DetailsTypes';
+import { formatCurrency, orderAccounts, orderByDate } from './Utils';
 
 const accounts = [
   {
@@ -45,6 +46,30 @@ const accounts = [
   },
 ];
 
+const details: Detail[] = [
+  {
+    id: 1,
+    accountId: 1,
+    transactionDate: '2020-12-20T04:44:15.582Z',
+    transactionAmount: '84.22',
+    description: 'Bhutan Planner copying',
+  },
+  {
+    id: 2,
+    accountId: 1,
+    transactionDate: '2020-12-28T16:52:12.129Z',
+    transactionAmount: '377.30',
+    description: 'scalable',
+  },
+  {
+    id: 3,
+    accountId: 1,
+    transactionDate: '2020-12-26T08:14:47.864Z',
+    transactionAmount: '641.09',
+    description: 'Coordinator e-tailers Cheese',
+  },
+];
+
 describe('Utils functions', () => {
   describe('orderAccounts functions', () => {
     it('should order by savings, then checking, then credit cards, and lastly bigger to less amount', () => {
@@ -53,9 +78,16 @@ describe('Utils functions', () => {
       expect(orderedAccounts[0]).toEqual(accounts[2]);
     });
   });
-  describe('formatCurrency functions', () => {
+  describe('formatCurrency function', () => {
     it('should format to COP currency', () => {
       expect(formatCurrency(2366000).substring(4)).toBe('2,366,000.00');
+    });
+  });
+  describe('orderByDate function', () => {
+    it('should sort by date', () => {
+      const orderedDetails = orderByDate(details);
+      expect(orderedDetails.length).toEqual(details.length);
+      expect(details[1]).toEqual(orderedDetails[1]);
     });
   });
 });
