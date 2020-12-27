@@ -15,6 +15,10 @@ Run `npm run test` to run tests and keep alive or `npm run test:ci` to generate 
 - Accounts https://5fe296aa7a94870017682620.mockapi.io/api/v1/account
 - Movements https://5fe296aa7a94870017682620.mockapi.io/api/v1/movement
 
+## User to test
+Username: Francis
+CC: 17205
+
 ## Special libraries used
 
 - **[redux toolkit](https://redux-toolkit.js.org/)** Library that helps to reduce the boilerplate for a redux based app.
