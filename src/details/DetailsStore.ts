@@ -16,7 +16,13 @@ export const fetchDetails = createAsyncThunk(
 export const detailsSlice = createSlice({
   name: STORE_NAME,
   initialState,
-  reducers: {},
+  reducers: {
+      clearDetails(state) {
+        state.details = initialState.details;
+        state.isLoading = false;
+        state.errorMessage = '';
+      }
+  },
   extraReducers: {
     [fetchDetails.fulfilled.type]: (state, action) => {
       state.details = action.payload;
@@ -33,5 +39,6 @@ export const detailsSlice = createSlice({
   },
 });
 
+export const { clearDetails } = detailsSlice.actions;
 export const detailsSelector = (state: State): DetailState => state.details;
 export const detailsReducer = detailsSlice.reducer;

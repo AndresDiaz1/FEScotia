@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { IonCol, IonContent, IonGrid, IonLabel, IonLoading, IonPage, IonRow } from '@ionic/react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { accountsSelector } from '../AccountsStore';
 import SimpleHeader from '../../sharedComponents/SimpleHeader/SimpleHeader';
 import AccountCard from '../components/AccountCard';
+import { clearDetails } from '../../details/DetailsStore';
 
 const AccountsPage: React.FC = () => {
   const { accounts, isLoading, errorMessage } = useSelector(accountsSelector);
+  const dispatch = useDispatch();
+
+
+  useEffect(()=> {
+    dispatch(clearDetails())
+  });
 
   const renderAccountsList = () => {
     return (
@@ -32,7 +39,7 @@ const AccountsPage: React.FC = () => {
 
   return (
     <IonPage>
-      <SimpleHeader title={'My Accounts'} />
+      <SimpleHeader title={'My Accounts'}  goBack={false}/>
       <IonContent>
         {accounts.length ? renderAccountsList() : renderNoAccounts()}
 

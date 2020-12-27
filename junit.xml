@@ -1,73 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="22" failures="0" time="6.138">
-  <testsuite name="SimpleHeader Component" errors="0" failures="0" skipped="0" timestamp="2020-12-26T22:18:58" time="1.653" tests="1">
-    <testcase classname="SimpleHeader Component Initial state Should render" name="SimpleHeader Component Initial state Should render" time="0.185">
+<testsuites name="jest tests" tests="28" failures="0" time="8.338">
+  <testsuite name="Input custom Component" errors="0" failures="0" skipped="0" timestamp="2020-12-27T02:14:13" time="2.01" tests="1">
+    <testcase classname="Input custom Component Initial state Should render" name="Input custom Component Initial state Should render" time="0.1">
     </testcase>
   </testsuite>
-  <testsuite name="Input custom Component" errors="0" failures="0" skipped="0" timestamp="2020-12-26T22:18:58" time="1.837" tests="1">
-    <testcase classname="Input custom Component Initial state Should render" name="Input custom Component Initial state Should render" time="0.071">
+  <testsuite name="SimpleHeader Component" errors="0" failures="0" skipped="0" timestamp="2020-12-27T02:14:13" time="2.352" tests="2">
+    <testcase classname="SimpleHeader Component Initial state Should render" name="SimpleHeader Component Initial state Should render" time="0.11">
+    </testcase>
+    <testcase classname="SimpleHeader Component Initial state Should render with back button" name="SimpleHeader Component Initial state Should render with back button" time="0.067">
     </testcase>
   </testsuite>
-  <testsuite name="Utils functions" errors="0" failures="0" skipped="0" timestamp="2020-12-26T22:19:00" time="1.056" tests="2">
-    <testcase classname="Utils functions orderAccounts functions should order by savings, then checking, then credit cards, and lastly bigger to less amount" name="Utils functions orderAccounts functions should order by savings, then checking, then credit cards, and lastly bigger to less amount" time="0.012">
+  <testsuite name="Details Component" errors="0" failures="0" skipped="0" timestamp="2020-12-27T02:14:13" time="3.546" tests="3">
+    <testcase classname="Details Component Initial state should render with no details" name="Details Component Initial state should render with no details" time="0.097">
     </testcase>
-    <testcase classname="Utils functions formatCurrency functions should format to COP currency" name="Utils functions formatCurrency functions should format to COP currency" time="0.001">
+    <testcase classname="Details Component Initial state should render error" name="Details Component Initial state should render error" time="0.018">
     </testcase>
-  </testsuite>
-  <testsuite name="AccountCard component" errors="0" failures="0" skipped="0" timestamp="2020-12-26T22:18:58" time="2.766" tests="1">
-    <testcase classname="AccountCard component Initial state Should render" name="AccountCard component Initial state Should render" time="0.074">
+    <testcase classname="Details Component Initial state should render details" name="Details Component Initial state should render details" time="0.049">
     </testcase>
   </testsuite>
-  <testsuite name="mainDB helper functions" errors="0" failures="0" skipped="0" timestamp="2020-12-26T22:19:01" time="0.33" tests="4">
-    <testcase classname="mainDB helper functions setDBItem helper function Should call Storage set" name="mainDB helper functions setDBItem helper function Should call Storage set" time="0.002">
+  <testsuite name="Login component" errors="0" failures="0" skipped="0" timestamp="2020-12-27T02:14:15" time="1.878" tests="3">
+    <testcase classname="Login component Initial state Should render No accounts" name="Login component Initial state Should render No accounts" time="0.064">
     </testcase>
-    <testcase classname="mainDB helper functions getDBItem helper function Should call Storage get" name="mainDB helper functions getDBItem helper function Should call Storage get" time="0">
+    <testcase classname="Login component Initial state Should render Error message" name="Login component Initial state Should render Error message" time="0.018">
     </testcase>
-    <testcase classname="mainDB helper functions getParsedDBItem helper function Should return the parsed item from DB" name="mainDB helper functions getParsedDBItem helper function Should return the parsed item from DB" time="0.017">
-    </testcase>
-    <testcase classname="mainDB helper functions clearDB helper function Should call Storage clear" name="mainDB helper functions clearDB helper function Should call Storage clear" time="0.001">
+    <testcase classname="Login component Initial state Should render account cards" name="Login component Initial state Should render account cards" time="0.052">
     </testcase>
   </testsuite>
-  <testsuite name="LoginData" errors="0" failures="0" skipped="0" timestamp="2020-12-26T22:19:02" time="0.386" tests="1">
-    <testcase classname="LoginData saveUserOnDB Should call Storage set" name="LoginData saveUserOnDB Should call Storage set" time="0">
+  <testsuite name="App component" errors="0" failures="0" skipped="0" timestamp="2020-12-27T02:14:15" time="1.815" tests="1">
+    <testcase classname="App component Initial state Should render" name="App component Initial state Should render" time="0.098">
     </testcase>
   </testsuite>
-  <testsuite name="Login component" errors="0" failures="0" skipped="0" timestamp="2020-12-26T22:19:00" time="1.697" tests="3">
-    <testcase classname="Login component Initial state Should render" name="Login component Initial state Should render" time="0.055">
+  <testsuite name="Utils functions" errors="0" failures="0" skipped="0" timestamp="2020-12-27T02:14:17" time="0.421" tests="3">
+    <testcase classname="Utils functions orderAccounts functions should order by savings, then checking, then credit cards, and lastly bigger to less amount" name="Utils functions orderAccounts functions should order by savings, then checking, then credit cards, and lastly bigger to less amount" time="0.001">
     </testcase>
-    <testcase classname="Login component Initial state Should render with loading" name="Login component Initial state Should render with loading" time="0.024">
+    <testcase classname="Utils functions formatCurrency function should format to COP currency" name="Utils functions formatCurrency function should format to COP currency" time="0.001">
     </testcase>
-    <testcase classname="Login component Initial state Should render with loading" name="Login component Initial state Should render with loading" time="0.009">
-    </testcase>
-  </testsuite>
-  <testsuite name="App component" errors="0" failures="0" skipped="0" timestamp="2020-12-26T22:19:01" time="1.079" tests="1">
-    <testcase classname="App component Initial state Should render" name="App component Initial state Should render" time="0.129">
+    <testcase classname="Utils functions orderByDate function should sort by date" name="Utils functions orderByDate function should sort by date" time="0">
     </testcase>
   </testsuite>
-  <testsuite name="LoginApi access helper class" errors="0" failures="0" skipped="0" timestamp="2020-12-26T22:19:02" time="0.368" tests="2">
-    <testcase classname="LoginApi access helper class getClients method should make getClients call correctly" name="LoginApi access helper class getClients method should make getClients call correctly" time="0.003">
+  <testsuite name="AccountCard component" errors="0" failures="0" skipped="0" timestamp="2020-12-27T02:14:17" time="0.828" tests="1">
+    <testcase classname="AccountCard component Initial state Should render" name="AccountCard component Initial state Should render" time="0.039">
+    </testcase>
+  </testsuite>
+  <testsuite name="DetailsAPI access helper class" errors="0" failures="0" skipped="0" timestamp="2020-12-27T02:14:17" time="0.502" tests="1">
+    <testcase classname="DetailsAPI access helper class getDetails method should make getDetails call correctly" name="DetailsAPI access helper class getDetails method should make getDetails call correctly" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="LoginApi access helper class" errors="0" failures="0" skipped="0" timestamp="2020-12-27T02:14:17" time="0.476" tests="2">
+    <testcase classname="LoginApi access helper class getClients method should make getClients call correctly" name="LoginApi access helper class getClients method should make getClients call correctly" time="0.002">
     </testcase>
     <testcase classname="LoginApi access helper class getClients method should make getClient call correctly" name="LoginApi access helper class getClients method should make getClient call correctly" time="0.001">
     </testcase>
   </testsuite>
-  <testsuite name="Login component" errors="0" failures="0" skipped="0" timestamp="2020-12-26T22:19:02" time="0.527" tests="3">
-    <testcase classname="Login component Initial state Should render No accounts" name="Login component Initial state Should render No accounts" time="0.027">
-    </testcase>
-    <testcase classname="Login component Initial state Should render Error message" name="Login component Initial state Should render Error message" time="0.006">
-    </testcase>
-    <testcase classname="Login component Initial state Should render account cards" name="Login component Initial state Should render account cards" time="0.027">
-    </testcase>
-  </testsuite>
-  <testsuite name="API access helper class" errors="0" failures="0" skipped="0" timestamp="2020-12-26T22:19:02" time="0.417" tests="1">
-    <testcase classname="API access helper class get method should make a call correctly" name="API access helper class get method should make a call correctly" time="0.003">
-    </testcase>
-  </testsuite>
-  <testsuite name="AppStore Integration Tests" errors="0" failures="0" skipped="0" timestamp="2020-12-26T22:19:02" time="0.283" tests="1">
+  <testsuite name="AppStore Integration Tests" errors="0" failures="0" skipped="0" timestamp="2020-12-27T02:14:18" time="0.43" tests="1">
     <testcase classname="AppStore Integration Tests Initializes the store" name="AppStore Integration Tests Initializes the store" time="0.001">
     </testcase>
   </testsuite>
-  <testsuite name="AccountApi access helper class" errors="0" failures="0" skipped="0" timestamp="2020-12-26T22:19:02" time="0.418" tests="1">
-    <testcase classname="AccountApi access helper class getAccounts method should make getAccounts call correctly" name="AccountApi access helper class getAccounts method should make getAccounts call correctly" time="0.003">
+  <testsuite name="LoginData" errors="0" failures="0" skipped="0" timestamp="2020-12-27T02:14:18" time="0.349" tests="1">
+    <testcase classname="LoginData saveUserOnDB Should call Storage set" name="LoginData saveUserOnDB Should call Storage set" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="Login component" errors="0" failures="0" skipped="0" timestamp="2020-12-27T02:14:17" time="0.82" tests="3">
+    <testcase classname="Login component Initial state Should render" name="Login component Initial state Should render" time="0.082">
+    </testcase>
+    <testcase classname="Login component Initial state Should render with loading" name="Login component Initial state Should render with loading" time="0.021">
+    </testcase>
+    <testcase classname="Login component Initial state Should render with loading" name="Login component Initial state Should render with loading" time="0.009">
+    </testcase>
+  </testsuite>
+  <testsuite name="API access helper class" errors="0" failures="0" skipped="0" timestamp="2020-12-27T02:14:18" time="0.336" tests="1">
+    <testcase classname="API access helper class get method should make a call correctly" name="API access helper class get method should make a call correctly" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="mainDB helper functions" errors="0" failures="0" skipped="0" timestamp="2020-12-27T02:14:18" time="0.289" tests="4">
+    <testcase classname="mainDB helper functions setDBItem helper function Should call Storage set" name="mainDB helper functions setDBItem helper function Should call Storage set" time="0.002">
+    </testcase>
+    <testcase classname="mainDB helper functions getDBItem helper function Should call Storage get" name="mainDB helper functions getDBItem helper function Should call Storage get" time="0">
+    </testcase>
+    <testcase classname="mainDB helper functions getParsedDBItem helper function Should return the parsed item from DB" name="mainDB helper functions getParsedDBItem helper function Should return the parsed item from DB" time="0.001">
+    </testcase>
+    <testcase classname="mainDB helper functions clearDB helper function Should call Storage clear" name="mainDB helper functions clearDB helper function Should call Storage clear" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="AccountApi access helper class" errors="0" failures="0" skipped="0" timestamp="2020-12-27T02:14:18" time="0.249" tests="1">
+    <testcase classname="AccountApi access helper class getAccounts method should make getAccounts call correctly" name="AccountApi access helper class getAccounts method should make getAccounts call correctly" time="0.002">
     </testcase>
   </testsuite>
 </testsuites>

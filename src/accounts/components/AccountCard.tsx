@@ -4,7 +4,7 @@ import './AccountCard.scss';
 import { Account } from '../AccountTypes';
 import { formatCurrency } from '../../utils/Utils';
 import { PATHS } from '../../AppConstants';
-import { useHistory } from 'react-router';
+import { useHistory } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { fetchDetails } from '../../details/DetailsStore';
 

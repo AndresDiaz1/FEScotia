@@ -35,6 +35,6 @@ export const formatCurrency = (value: number): string => {
   }).format(value);
 };
 
-export const orderByDate = (details: Detail[]): Detail[] => {
+export const orderByDate = (details: Detail[]):Detail[] => {
   return details.sort((a: Detail, b: Detail) => (a.transactionDate < b.transactionDate ? 1 : -1));
-};
+}

@@ -5,6 +5,14 @@ import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import configureStore from 'redux-mock-store';
 
+const mockHistoryPush = jest.fn();
+jest.mock('react-router-dom', () => ({
+  ...jest.requireActual('react-router-dom'),
+  useHistory: () => ({
+    push: mockHistoryPush,
+  }),
+}));
+
 describe('AccountCard component', () => {
   describe('Initial state', () => {
     it('Should render', () => {
@@ -30,6 +38,9 @@ describe('AccountCard component', () => {
           <AccountCard {...account} />
         </Provider>
       );
+      const detailsLabel = component.find('IonLabel.account-card__link');
+      detailsLabel.simulate('click');
+      expect(mockHistoryPush).toHaveBeenCalled();
       expect(component).toMatchSnapshot();
     });
   });

@@ -30,7 +30,7 @@ const DetailsPage: React.FC = () => {
 
   return (
     <IonPage>
-      <SimpleHeader title={'Details'} />
+      <SimpleHeader title={'Details'} goBack={true}/>
       <IonContent>
         {details.length ? renderDetailsList() : renderNoDetails()}
         {errorMessage ? renderErrorMessage() : <></>}

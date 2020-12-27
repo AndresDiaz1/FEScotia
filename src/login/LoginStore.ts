@@ -24,6 +24,12 @@ export const loginSlice = createSlice({
     setLocallySavedUser(state, action: PayloadAction<User>) {
       state.user = action.payload;
     },
+    logout(state){
+      state.user = initialState.user;
+      state.isLogged = false;
+      state.logginIn = false;
+      state.errorMessage = '';
+    }
   },
   extraReducers: {
     [signIn.fulfilled.type]: (state, action: PayloadAction<User>) => {
@@ -43,6 +49,6 @@ export const loginSlice = createSlice({
   },
 });
 
-export const { setLocallySavedUser } = loginSlice.actions;
+export const { setLocallySavedUser, logout } = loginSlice.actions;
 export const loginSelector = (state: State): typeof initialState => state.login;
 export const loginReducer = loginSlice.reducer;
