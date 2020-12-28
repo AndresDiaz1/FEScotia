@@ -5,6 +5,7 @@ FE Test using Ionic Framework V5 and React. Simulated API using [mockapi](https:
 ## Init
 
 Run `npm install` in order to install dependencies
+RUn `ionic serve` if you have ionic CLI installed or `npm run start` in order to run the app
 
 ## Tests
 
